@@ -1,0 +1,96 @@
+<!--{"title": "Contato e orçamento | Doce Encantum Floricultura — Caxias do Sul", "desc": "Solicite um orçamento para casamento, 15 anos, formatura, evento corporativo, decoração floral ou buquê de noiva em Caxias do Sul. Atendimento pelo WhatsApp.", "nav": "contato", "crumb": "Contato", "eyebrow": "Contato e orçamento", "h1": "Vamos criar algo especial juntos?", "lead": "Preencha os detalhes abaixo e envie pelo WhatsApp. Respondemos com uma proposta feita para você."}-->
+    <section class="secao">
+      <div class="container contato-grid">
+        <form class="form" id="form-orcamento" novalidate>
+          <fieldset>
+            <legend>Quero orçamento para:</legend>
+            <div class="opcoes">
+              <label class="opcao"><input type="radio" name="tipo" value="casamento" data-rotulo="Casamento" required><span>Casamento</span></label>
+              <label class="opcao"><input type="radio" name="tipo" value="15-anos" data-rotulo="15 anos"><span>15 anos</span></label>
+              <label class="opcao"><input type="radio" name="tipo" value="formatura" data-rotulo="Formatura"><span>Formatura</span></label>
+              <label class="opcao"><input type="radio" name="tipo" value="corporativo" data-rotulo="Evento corporativo"><span>Evento corporativo</span></label>
+              <label class="opcao"><input type="radio" name="tipo" value="aniversario" data-rotulo="Aniversário"><span>Aniversário</span></label>
+              <label class="opcao"><input type="radio" name="tipo" value="decoracao" data-rotulo="Decoração floral"><span>Decoração floral</span></label>
+              <label class="opcao"><input type="radio" name="tipo" value="buque-noiva" data-rotulo="Buquê de noiva"><span>Buquê de noiva</span></label>
+              <label class="opcao"><input type="radio" name="tipo" value="outro" data-rotulo="Outro"><span>Outro</span></label>
+            </div>
+          </fieldset>
+
+          <div class="campos">
+            <div class="campo--cheio">
+              <label for="f-nome">Seu nome *</label>
+              <input id="f-nome" name="nome" type="text" autocomplete="name" required>
+            </div>
+            <div>
+              <label for="f-data">Data do evento</label>
+              <input id="f-data" name="data" type="date">
+            </div>
+            <div>
+              <label for="f-convidados">Número aproximado de convidados</label>
+              <input id="f-convidados" name="convidados" type="number" min="1" inputmode="numeric">
+            </div>
+            <div class="campo--cheio">
+              <label for="f-local">Local</label>
+              <input id="f-local" name="local" type="text" placeholder="Salão, igreja, cidade…">
+            </div>
+            <div>
+              <label for="f-whatsapp">WhatsApp *</label>
+              <input id="f-whatsapp" name="whatsapp" type="tel" autocomplete="tel" placeholder="(54) 9 0000-0000" required>
+            </div>
+            <div>
+              <label for="f-email">E-mail</label>
+              <input id="f-email" name="email" type="email" autocomplete="email">
+            </div>
+            <div class="campo--cheio">
+              <label for="f-mensagem">Mensagem</label>
+              <textarea id="f-mensagem" name="mensagem" placeholder="Conte um pouco sobre o que você imagina: estilo, cores, flores preferidas…"></textarea>
+            </div>
+          </div>
+
+          <button class="btn btn--roxo" type="submit">
+            <svg class="ico" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            Solicitar orçamento
+          </button>
+          <p class="form__nota">Ao enviar, abriremos o WhatsApp com os dados do seu pedido.</p>
+          <div class="form__aviso" role="status" aria-live="polite"></div>
+        </form>
+
+        <aside class="info" aria-label="Outras formas de contato">
+          <a class="info__item" href="{WA}" target="_blank" rel="noopener">
+            <svg class="ico" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            <div><strong>WhatsApp</strong><span>Pedidos, catálogo e dúvidas</span></div>
+          </a>
+          <a class="info__item" href="{IG}" target="_blank" rel="noopener">
+            <svg class="ico" aria-hidden="true"><use href="#i-instagram"/></svg>
+            <div><strong>Instagram</strong><span>@doce_encantum</span></div>
+          </a>
+          <a class="info__item js-loja" href="{LOJA}" target="_blank" rel="noopener">
+            <svg class="ico" aria-hidden="true"><use href="#i-carrinho"/></svg>
+            <div><strong>Loja virtual</strong><span>Compre presentes online</span></div>
+          </a>
+          <div class="info__item">
+            <svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>
+            <!-- Preencha com o endereço completo -->
+            <div><strong>Endereço</strong><span>[Rua, número — bairro]<br>Caxias do Sul · RS</span></div>
+          </div>
+          <div class="info__item">
+            <svg class="ico" aria-hidden="true"><use href="#i-relogio"/></svg>
+            <!-- Preencha com os horários reais -->
+            <div><strong>Horários</strong><span>[Segunda a sexta: 00h às 00h]<br>[Sábado: 00h às 00h]</span></div>
+          </div>
+          <!-- Troque o q= pelo endereço completo para o mapa apontar a loja -->
+          <iframe class="mapa" title="Mapa: Doce Encantum Floricultura, Caxias do Sul" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Floricultura%20Doce%20Encantum%2C%20Caxias%20do%20Sul%20RS&output=embed"></iframe>
+        </aside>
+      </div>
+    </section>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Florist",
+      "name": "Doce Encantum Floricultura",
+      "address": { "@type": "PostalAddress", "addressLocality": "Caxias do Sul", "addressRegion": "RS", "addressCountry": "BR" },
+      "sameAs": ["https://www.instagram.com/doce_encantum/"]
+    }
+    </script>
